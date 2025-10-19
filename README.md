@@ -35,16 +35,18 @@ git clone https://github.com/mayar-aldeb/fastapi-tasks.git
 # 2. Navigate into the project
 cd fastapi-tasks
 
-# 3. (Optional) Create a virtual environment
-python -m venv venv
+# 3. Create a virtual environment
+python -m venv .env
 # Activate it
 # Windows:
-venv\Scripts\activate
+.env\Scripts\activate
 # Mac/Linux:
-source venv/bin/activate
+source .env/bin/activate
+
 
 # 4. Install dependencies
 pip install -r requirements.txt
 
 # 5. Run the FastAPI app
 uvicorn main:app --reload
+
